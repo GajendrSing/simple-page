@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ############### html styling ################ */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+p, li{
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.15rem;
+}
+
+h1,h2,h3{
+    font-size:1.1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.15rem;
+}
+
+
+/* ######################### utility styling #################### */
+.container{
+    max-width: 1000px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.lg-heading{
+    font-size: 1.5rem;
+}
+
+.md-headinng{
+    font-size: 1rem;
+}
+
+.text-blue{
+    color: rgb(6, 6, 124);
+}
+.text-black{
+    color: black;
+}
+
+
+/* ################### header styling ###################  */
+ .header .header-content{
+   
+    /* text-align: center; */
+ }
+ .header .header-content .font{
+   
+     display: inline-block;
+ }
+
+ .header .header-content .intel{
+    color: rgba(206, 203, 203, 0.795);
+}
+
+ .header .header-content .logo{
+     float: left;
+     text-transform: uppercase;
+ }
+ .header .header-content .items{
+     float: right;    
+     font-weight: 600;
+}
+
+ .header .header-content .item{
+     display: inline-block;
+     padding: 1rem;
+     text-transform: uppercase;
+ }
+
+ .header .header-content::after{
+     content: '';
+     display: block;
+     clear: both;
+ }
+
+ /* #################### content #####################  */
+
+ .header .content{
+     
+    position: relative;
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/homepage-image.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border: 1px solid green; */
+ }
+
+
+ 
+
+ .header .texts{
+    /* text-align: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+ .header .content .text{
+
+     color: white;
+     /* border: 1px solid red; */
+     padding-right: 5rem;
+     /* margin-right: 60%; */
+     display: block;
+     float: left;
+     font-size: 25px;
+     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+     
+ }
+
+ /* ################## about styling #####################  */
+
+ .about-detail{
+     /* border: 1px solid red; */
+     height: 250px;
+     /* width: 90%; */
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+     display: inline-block;
+     
+ }
+
+ .about-detail .about-image{
+     height: 250px;
+     /* border: 1px solid green; */
+     float: left;
+     width: 50%;
+ }
+
+ .about-detail .about-image img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .about-detail .about-text{
+     height: 250px;
+     /* border: 1px solid blue; */
+     float: right;
+     width: 50%;
+     /* padding: 1rem; */
+ }
+ .about-text h2{
+     text-align: left;
+     text-transform: uppercase;
+
+ }
+ .about-text p{
+     font-weight: 400;
+     font-size: 1.1rem;
+ }
+
+ .about-detail::after{
+     content: "";
+     display: block;
+     clear: both;
+ }
+
+ /* #################### team stying ####################  */
+
+ .teams .team{
+     text-align: center;
+     padding-top: 3rem;
+     padding-bottom: 2rem;
+     text-transform: uppercase;
+}
+
+
+/* ############# team menber styling ####################  */
+
+
+.teams .box{
+    /* border: 1px solid red; */
+    margin-bottom: 5rem;
+    height: 250px;
+}
+
+.box1 .box1-img, .box .box3-img{
+    /* border: 1px dotted pink; */
+    float: right;
+    width: 30%;
+}
+
+
+.box1 .team1, .box3 .team3{
+    /* border: 1px solid green; */
+    float: left;
+    width: 70%;
+  
+}
+
+
+.box2 .box2-img, .box4 .box4-img{
+    /* border: 1px dotted pink; */
+    float: left;
+    width: 30%;
+}
+
+.box2 .team2, .box4 .team4{
+    /* border: 1px solid green; */
+    float: right;
+    width: 70%;
+   
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box .person{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.teams .box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ######################## contact us #########################  */
+
+.forms .contact{
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.form{
+    /* border: 2px solid green; */
+}
+
+.forms .names{
+    /* border: 1px solid red; */
+    margin-bottom: 0.5rem;
+}
+.forms .names .name{
+    float: left;
+    width: 49%;
+    height: 40px;
+}
+.forms .names .email{
+    float: right;
+    width: 49%;
+    height: 40px;
+}
+
+.forms .names::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.forms .mobile-no{
+    /* border: 1px solid red; */
+    margin-bottom: 0.5rem;
+}
+
+.forms .mobile-no .mobile{
+    float: left;
+    width: 49%;
+    height: 40px;
+}
+
+.forms .mobile-no .company{
+    float: right;
+    width: 49%;
+    height: 40px;
+}
+.forms .mobile-no::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.forms .form .message textarea{
+    width: 100%;
+    height: 80px;
+}
+
+.forms .form button{
+    display: block;
+    margin: 0 auto;
+    padding: 0.2em 1em;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #120368;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5em;
+}
+
+.forms footer{
+    border: 5px solid yellow;
+    background-color: yellow;
+    text-align: center;
+}
